@@ -73,7 +73,7 @@ const List: FunctionComponent<Props> = (props): JSX.Element => {
             </Container>
           :
             <Container>
-              <p>Не найдено!</p>
+              <p>Пусто!</p>
             </Container>
       }
     </React.Fragment>
