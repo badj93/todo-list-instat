@@ -57,9 +57,9 @@ const List: FunctionComponent<Props> = (props): JSX.Element => {
           ?
             <Container>
               {
-                props.listStore.getList.map((item: ListItem) => {
+                props.listStore.getList.map((item: ListItem, i: number) => {
                   return (
-                    <Item>
+                    <Item key={i}>
                       <Number>{item.id}</Number>
                       <Name>{item.title}</Name>
                       <Checkbox
